@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ahmad Ali — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- BG -->
+<div class="bg-glow"></div>
+
+<!-- PROGRESS -->
+<div class="progress-bar" id="progressBar" style="width:16.66%"></div>
+
+<!-- LOGO -->
+<div class="logo">AA</div>
+
+<!-- SIDE COUNTER -->
+<div class="side-counter">
+  <div class="counter-num" id="counterNum">01 / 06</div>
+  <div class="counter-line"></div>
+  <div class="counter-dots">
+    <div class="cdot active" onclick="goTo(0)"></div>
+    <div class="cdot" onclick="goTo(1)"></div>
+    <div class="cdot" onclick="goTo(2)"></div>
+    <div class="cdot" onclick="goTo(3)"></div>
+    <div class="cdot" onclick="goTo(4)"></div>
+    <div class="cdot" onclick="goTo(5)"></div>
+  </div>
+</div>
+
+<!-- LABEL -->
+<div class="page-label"><span id="pageTitle">Introduction</span></div>
+
+<!-- HINT -->
+<div class="hint" id="hint">Click to continue</div>
+
+<!-- WA -->
+<a href="https://wa.me/923014253636" target="_blank" class="wa-btn" id="waBtn">💬 WhatsApp Me</a>
+
+<!-- ═══════ PAGES ═══════ -->
+<div class="pages" id="pagesContainer">
+
+  <!-- PAGE 1: INTRO -->
+  <div class="page active" id="page-0">
+    <div class="p1-wrap">
+      <div class="p1-eyebrow">Available for Freelance Work</div>
+      <div class="p1-name">Ahmad<br><span class="outline">Ali</span></div>
+      <div class="p1-divider"></div>
+      <div class="p1-role">BS Computer Science · Web Developer · Pakistan</div>
+      <button class="p1-btn" onclick="goTo(1)">
+        <span>Explore Portfolio</span>
+        <span>→</span>
+      </button>
+    </div>
+    <div class="p1-scroll-line"><div></div></div>
+  </div>
+
+  <!-- PAGE 2: ABOUT -->
+  <div class="page" id="page-1">
+    <div class="p2-wrap">
+      <div class="p2-left">
+        <div class="section-tag">01 — About</div>
+        <h2 class="section-title">Crafting<br><em>Digital</em><br>Experiences</h2>
+        <p class="p2-text">I'm <strong>Ahmad Ali</strong>, a passionate Computer Science student currently in my <strong>4th Semester of BS CS</strong>.</p>
+        <p class="p2-text">I specialize in building web solutions using <strong>HTML, PHP & Database Management</strong>. Based in <strong>Nankana Sahib, Punjab</strong> — always open to new opportunities.</p>
+      </div>
+      <div class="p2-right">
+        <div class="stat-box">
+          <div class="stat-box-num">4th</div>
+          <div class="stat-box-label">Semester</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-box-num">8+</div>
+          <div class="stat-box-label">Technologies</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-box-num">3</div>
+          <div class="stat-box-label">Core Strengths</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-box-num">∞</div>
+          <div class="stat-box-label">Curiosity</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGE 3: SKILLS -->
+  <div class="page" id="page-2">
+    <div class="p3-wrap">
+      <div class="section-tag">02 — Skills</div>
+      <h2 class="section-title">What I <em>Know</em></h2>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <div class="skill-info">
+            <div class="skill-name-text">HTML / CSS</div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:90%"></div></div>
+          </div>
+          <div class="skill-pct">90%</div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info">
+            <div class="skill-name-text">PHP</div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:75%"></div></div>
+          </div>
+          <div class="skill-pct">75%</div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info">
+            <div class="skill-name-text">JavaScript</div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:70%"></div></div>
+          </div>
+          <div class="skill-pct">70%</div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info">
+            <div class="skill-name-text">MySQL / Database</div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:80%"></div></div>
+          </div>
+          <div class="skill-pct">80%</div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info">
+            <div class="skill-name-text">C / C++</div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:65%"></div></div>
+          </div>
+          <div class="skill-pct">65%</div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-info">
+            <div class="skill-name-text">Git / GitHub</div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" style="width:70%"></div></div>
+          </div>
+          <div class="skill-pct">70%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGE 4: EDUCATION -->
+  <div class="page" id="page-3">
+    <div class="p4-wrap">
+      <div class="section-tag">03 — Education</div>
+      <div class="edu-big-card">
+        <div class="edu-year">2023 — PRESENT</div>
+        <div class="edu-big-deg">Bachelor of Science in<br><em>Computer Science</em></div>
+        <div class="edu-badge">4th Semester · Ongoing</div>
+        <div class="edu-big-desc">
+          Currently pursuing my <strong>BS in Computer Science</strong>, building a strong foundation in programming, web development, and database systems. Focused on practical projects that solve real-world problems.
+        </div>
+        <div class="edu-loc-line">
+          📍 &nbsp;<span>Nankana Sahib, Punjab, Pakistan</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGE 5: PROJECTS -->
+  <div class="page" id="page-4">
+    <div class="p5-wrap">
+      <div class="section-tag">04 — Projects</div>
+      <h2 class="section-title">My <em>Work</em></h2>
+
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-meta">
+            <div class="project-name">DF <em>YouTube</em></div>
+            <div class="project-subtitle">Distraction Free Video Platform</div>
+          </div>
+          <div class="project-num">01</div>
+        </div>
+
+        <p class="project-desc">
+          A clean, distraction-free video browsing experience built with <strong>HTML, CSS & JavaScript</strong>. Organized into focused categories — Music, Gaming, and Coding — so you can watch without the noise of recommendations and ads.
+        </p>
+
+        <div class="project-tags">
+          <div class="project-tag">HTML</div>
+          <div class="project-tag">CSS</div>
+          <div class="project-tag">JavaScript</div>
+          <div class="project-tag">GitHub Pages</div>
+          <div class="project-tag">UX Design</div>
+        </div>
+
+        <div class="project-links">
+          <a href="https://jaguarthinker.github.io/my_web_project/" target="_blank" class="project-link">
+            <span>🌐 Live Demo</span>
+            <span>→</span>
+          </a>
+          <a href="https://github.com/jaguarthinker/my_web_project" target="_blank" class="project-link">
+            <span>⌥ GitHub Repo</span>
+            <span>→</span>
+          </a>
+        </div>
+
+        <div class="project-cats">
+          <div class="pcat"><div class="pcat-icon">🎵</div>Music</div>
+          <div class="pcat"><div class="pcat-icon">🎮</div>Gaming</div>
+          <div class="pcat"><div class="pcat-icon">💻</div>Coding</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGE 6: CONTACT -->
+  <div class="page" id="page-5">
+    <div class="p6-wrap">
+      <div class="p6-left">
+        <div class="section-tag">05 — Contact</div>
+        <h2 class="section-title">Let's<br><em>Connect</em></h2>
+        <p class="p6-subtext">Open to freelance projects, collaborations, and new opportunities. Don't hesitate to reach out.</p>
+      </div>
+      <div class="contact-cards">
+        <a href="mailto:ahmdali8893@gmail.com" class="contact-card">
+          <div class="cc-icon">✉</div>
+          <div class="cc-info">
+            <div class="cc-label">Email</div>
+            <div class="cc-val">ahmdali8893@gmail.com</div>
+          </div>
+          <div class="cc-arrow">→</div>
+        </a>
+        <a href="https://wa.me/923014253636" target="_blank" class="contact-card">
+          <div class="cc-icon">💬</div>
+          <div class="cc-info">
+            <div class="cc-label">WhatsApp</div>
+            <div class="cc-val">+92 301 425 3636</div>
+          </div>
+          <div class="cc-arrow">→</div>
+        </a>
+        <a href="https://github.com/jaguarthinker" target="_blank" class="contact-card">
+          <div class="cc-icon">⌥</div>
+          <div class="cc-info">
+            <div class="cc-label">GitHub</div>
+            <div class="cc-val">github.com/jaguarthinker</div>
+          </div>
+          <div class="cc-arrow">→</div>
+        </a>
+
+        <!-- ── LinkedIn (NEW) ── -->
+        <a href="https://www.linkedin.com/in/ahmad-jutt-a709a2405" target="_blank" class="contact-card">
+          <div class="cc-icon">in</div>
+          <div class="cc-info">
+            <div class="cc-label">LinkedIn</div>
+            <div class="cc-val">linkedin.com/in/ahmad-jutt</div>
+          </div>
+          <div class="cc-arrow">→</div>
+        </a>
+
+        <!-- ── YouTube ── -->
+        <a href="https://youtube.com/@ahmadjutt-c7v5h" target="_blank" class="contact-card">
+          <div class="cc-icon">▶</div>
+          <div class="cc-info">
+            <div class="cc-label">YouTube</div>
+            <div class="cc-val">youtube.com/@ahmadjutt</div>
+          </div>
+          <div class="cc-arrow">→</div>
+        </a>
+
+        <a href="#" class="contact-card">
+          <div class="cc-icon">📍</div>
+          <div class="cc-info">
+            <div class="cc-label">Location</div>
+            <div class="cc-val">Nankana Sahib, Punjab, Pakistan</div>
+          </div>
+          <div class="cc-arrow">→</div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /pages -->
+
+<script src="script.js"></script>
+</body>
+</html>
